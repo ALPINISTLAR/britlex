@@ -157,7 +157,7 @@ img
   line-height: 64px;
   margin-bottom: 27px;
 }
-.hero-heading::after
+/* .hero-heading::after
 {
   display: flex;
   content: "";
@@ -169,7 +169,7 @@ img
   position: absolute;
   left: 675px;
   top: 350px;
-}
+} */
 .hero-text {
   width: 632px;
   font-family: Poppins;
