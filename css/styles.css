@@ -300,8 +300,8 @@ img
 }
 .about-us-info
 {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .about-us-info-item
 {
@@ -323,5 +323,104 @@ justify-content: space-between;
   line-height: 30px;
   color: #8F95A5;
 }
-.about-us-img {
+
+/* * * * PRICING SECTION * * * */
+.pricing {
+  margin-bottom: 250px;
+}
+.pricing-heading {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+}
+.pricing-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.pricing-list-item {
+  width: calc(100% / 3);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-list-item:not(:last-child)
+{
+  margin-right: 20px;
+}
+.pricing-list-item-img {
+  display: flex;
+}
+.img-item-1 {
+
+  width: 311px;
+  height: 311px;
+  margin-bottom: 29px;
+}
+.img-item-2 {
+  width: 391px;
+  height: 283px;
+  margin-top: 29px;
+  margin-bottom: 28px;
+}
+.img-item-3 {
+  width: 340px;
+  height: 340px;
+}
+.pricing-item-title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #263238;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.pricing-item-text {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #8F95A5;
+  width: 390px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  flex-grow: 1;
+  align-self: flex-start;
+}
+.pricing-item-price {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #EEEEEE;
+  align-self: flex-start;
+}
+.item-cost {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  color: #263238;
+}
+.item-period {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #546269;
 }
