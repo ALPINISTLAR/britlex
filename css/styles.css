@@ -48,6 +48,10 @@ body
   color: #fff;
   background-color: #263238;
 }
+.button-grid {
+  padding: 15px 51px;
+}
+
 img
 {
   max-width: 100%;
@@ -63,7 +67,6 @@ img
   margin-right: auto;
   margin-left: auto;
 }
-
 /* * * HEADER * * */
 .site-header
 {
@@ -112,6 +115,7 @@ img
   opacity: 0.6;
 }
 .site-header-main-link {
+  background-color: #fff;
   text-decoration: none;
   text-transform: capitalize;
   color: #263238;
@@ -119,6 +123,7 @@ img
   border-radius: 5px;
   padding: 12px 40px;
   transition: 0.4s ease;
+  cursor: pointer;
 }
 .site-header-main-link:hover
 {
@@ -138,6 +143,7 @@ img
 }
 /* * hero * */
 .hero {
+  position: relative;
   margin-bottom: 100px;
 }
 .hero-container {
@@ -157,7 +163,7 @@ img
   line-height: 64px;
   margin-bottom: 27px;
 }
-/* .hero-heading::after
+.hero-heading::after
 {
   display: flex;
   content: "";
@@ -167,9 +173,9 @@ img
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 675px;
-  top: 350px;
-} */
+  left: 612px;
+  top: 217px;
+}
 .hero-text {
   width: 632px;
   font-family: Poppins;
@@ -209,13 +215,18 @@ img
   margin-bottom: 95px;
 }
 .skills-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: 435px 435px 435px;
+  grid-gap: 20px;
 }
 .skills-grid-item {
   background-color: #F5F5F5;
   border-radius: 10px;
 }
 
+.card-3 .skills-grid-item-img{
+  margin-bottom: 55px;
+}
 .skills-grid-item-title {
   font-family: Poppins;
   font-size: 30px;
@@ -238,35 +249,24 @@ img
   margin-bottom: 35px;
   flex-grow: 1;
 }
-.button-grid {
-  padding: 15px 51px;
-}
-.skills-grid-inner {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .card-1 {
-  width: 435px;
-  flex-shrink: 0;
-  margin-right: 20px;
+  grid-row-start: 1;
+  grid-row-end: 3;
   padding: 35px 22px 92px;
 }
 .card-2 {
-  width: 100%;
-  max-width: 435px;
-  margin-right: 20px;
   padding: 5px 20px 44px 40px;
 }
 .card-3 {
-  width: 435px;
   padding: 5px 40px 44px;
 }
 .card-4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
   display: flex;
   flex-direction: row-reverse;
-  width: 890px;
   padding: 43px 25px 44px 44px;
-  margin-top: 20px;
 }
 
 /* * * about us * * */
@@ -364,7 +364,6 @@ img
   display: flex;
 }
 .img-item-1 {
-
   width: 311px;
   height: 311px;
   margin-bottom: 29px;
@@ -420,6 +419,7 @@ img
   font-weight: 400;
   line-height: 45px;
   color: #263238;
+  margin-right: 5px;
 }
 .item-period {
   font-family: Poppins;
